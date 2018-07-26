@@ -20,6 +20,8 @@ class Create (CreateAPIView):
 	serializer_class = ClassroomCreateUpdateSerializer
 	def perform_create(self, serializer):
 		serializer.save(teacher=self.request.user)
+		#assigning teacher automatically as the object is being written 
+		#override the class of create
 
 
 class Update (RetrieveUpdateAPIView):

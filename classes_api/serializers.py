@@ -19,5 +19,5 @@ class DetailSerializer(serializers.ModelSerializer):
 class ClassroomCreateUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classroom
-        fields = ['subject', 'year', 'teacher']
+        fields = ['name','subject', 'year', ]
 
